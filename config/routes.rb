@@ -18,6 +18,8 @@ ROR::Application.routes.draw do
   resources :pages
   root :to => "pages#index"
   resources :links
+  post '/links' => 'links#create'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
