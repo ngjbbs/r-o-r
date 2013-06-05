@@ -6,6 +6,10 @@
   <% @links.each do |link| %>
     <li>
     	<%= link_to link.title, link_path(link) %>
+    	<ul>
+    		<li><%= link_to "comments", link %>
+    		</li>
+    	</ul>
     </li>
   <% end %>
 
