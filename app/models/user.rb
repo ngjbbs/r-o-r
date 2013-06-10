@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   
 has_many :links
+has_many :votes
 has_many :comments
 
   # :token_authenticatable, :confirmable,
