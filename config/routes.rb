@@ -14,6 +14,7 @@ ROR::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :votes
   resources :comments
   post '/comments' => 'comments#create'
   resources :pages
